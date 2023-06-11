@@ -10,8 +10,8 @@ Replace the Project Title
 Describe what your project is about and what it does
 
 ### BikeShare.py
-Include the files used
+on the bike share python code was used and sufix with a .py to read python
 
 ### https://github.com/udacity/pdsnd_github
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+the above git hub link was used to fork the project and the python project was used to go through this project
 
