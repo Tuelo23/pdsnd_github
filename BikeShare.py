@@ -24,7 +24,7 @@ def get_filters():
         else:
             break
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # TO DO: get user input for month (all, january, february, March, Aril, May , june)
     while True:
         month = input("Enter month name (e.g. January, February, March...June) or 'all' for no filter: ").lower()
         if month not in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
@@ -172,12 +172,12 @@ def display_data(df):
     """Displays rows of data based on user's request."""
 
     start_loc = 0
-    view_display = input("Do you want to see the first 10 rows of data? Enter yes or no: ").lower()
+    view_display = input("Do you want to see the first 8 rows of data? Enter yes or no: ").lower()
 
     while view_display == 'yes':
-        print(df.iloc[start_loc:start_loc+10])
-        start_loc += 10
-        view_display = input("Do you want to see the next 10 rows of data? Enter yes or no: ").lower()
+        print(df.iloc[start_loc:start_loc+8])
+        start_loc += 8
+        view_display = input("Do you want to see the next 8 rows of data? Enter yes or no: ").lower()
 
 def main():
     while True:
