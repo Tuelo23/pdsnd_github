@@ -20,7 +20,7 @@ def get_filters():
     while True:
         city = input("Enter city name (Chicago, New York City, Washington): ").lower()
         if city not in CITY_DATA:
-            print("Invalid city name. Please try again.")
+            print("Invalid city name. Please try different entry.")
         else:
             break
 
@@ -36,7 +36,7 @@ def get_filters():
     while True:
         day = input("Enter day of the week (e.g. Monday, Tuesday...Sunday) or 'all' for no filter: ").lower()
         if day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
-            print("Invalid day of the week. Please try again.")
+            print("Invalid day of the week. Please try different entry.")
         else:
             break
 
@@ -163,7 +163,7 @@ def user_stats(df):
         most_common_birth_year = df['Birth Year'].mode()[0]
         print('Most Common Birth Year:', int(most_common_birth_year))
     else:
-        print('Birth year information is not available for this dataset.')
+        print('Birth year information is not available for this dataset, please try diffrent entry.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
