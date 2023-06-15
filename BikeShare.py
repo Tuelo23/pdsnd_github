@@ -172,12 +172,12 @@ def display_data(df):
     """Displays rows of data based on user's request."""
 
     start_loc = 0
-    view_display = input("Do you want to see the first 8 rows of data? Enter yes or no: ").lower()
+    view_display = input("Do you want to see the first 15 rows of data? Enter yes or no: ").lower()
 
     while view_display == 'yes':
-        print(df.iloc[start_loc:start_loc+8])
-        start_loc += 8
-        view_display = input("Do you want to see the next 8 rows of data? Enter yes or no: ").lower()
+        print(df.iloc[start_loc:start_loc+15])
+        start_loc += 15
+        view_display = input("Do you want to see the next 15 rows of data? Enter yes or no: ").lower()
 
 def main():
     while True:
